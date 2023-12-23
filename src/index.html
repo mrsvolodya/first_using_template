@@ -1,13 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Title</title>
-    <link rel="stylesheet" href="./styles/main.scss">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/main.css">
+    <script src="./scripts/main.js" defer
+      type="module">
+    </script>
   </head>
+
   <body>
-    <h1>Hello Mate Academy</h1>
-    <script type="text/javascript" src="scripts/main.js"></script>
+    <main class="main_page">
+      <div class="calculator">
+        <div class="calculator_line">
+          <span id="close">&times;</span>
+          <span id="maximize" class="min-max">&#128470;</span>
+          <span id="minimize">&#128469;</span>
+        </div>
+        <div class="output">
+          <div class="previous-operand"></div>
+          <div class="current-operand"></div>
+        </div>
+        <div class="keyboard">
+          <div class="calculator_buttons-numbers">
+            <button type="button" class="button button--number">7</button>
+            <button type="button" class="button button--number">8</button>
+            <button type="button" class="button button--number">9</button>
+            <button type="button" class="button button--number">4</button>
+            <button type="button" class="button button--number">5</button>
+            <button type="button" class="button button--number">6</button>
+            <button type="button" class="button button--number">1</button>
+            <button type="button" class="button button--number">2</button>
+            <button type="button" class="button button--number">3</button>
+            <button type="button" class="button button--number">.</button>
+            <button type="button" class="button button--number">0</button>
+            <button type="button" class="button button--equal">=</button>
+          </div>
+
+          <div class="calculator_buttons-operations">
+            <button type="button" class="button button--operands button--del">AC</button>
+            <button type="button" class="button button--operands">+</button>
+            <button type="button" class="button button--operands">-</button>
+            <button type="button" class="button button--operands">÷</button>
+            <button type="button" class="button button--operands">&#215;</button>
+          </div>
+
+          <div class="calculator_free-space">
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <div class="button-calc button-calc--hidden">
+      <button class="open_calculator">Open Calculacor</button>
+    </div>
+
   </body>
 </html>
