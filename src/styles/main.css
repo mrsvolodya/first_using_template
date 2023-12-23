@@ -89,7 +89,7 @@ body {
 }
 
 .button {
-  filter: drop-shadow(0px 0.5px 0.5px );
+  filter: drop-shadow(0 0.5px 0.5px );
   background-color: #4b4b4b;
   border: none;
   cursor: pointer;
@@ -105,11 +105,11 @@ body {
   background-color: #777;
 }
 
-.button: hover {
-  background-color:#4b504b;
+.button:hover {
+  background-color: #4b504b;
 }
 
-.button-operands: hover {
+.button-operands:hover {
   background-color: #acacac;
 }
 
